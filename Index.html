@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Navigation Bar</title>
+</head>
+<body>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      outline: 0px;
+    }
+    main {
+    font-family: Arial, sans-serif;
+    /* background-color:black ; */
+    position: sticky;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue; 
+}
+.logo{
+    width: 40vh;
+    height: 55px;
+    /* border: 1px solid red; */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    width: 50vh;
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    /* padding: 10px; */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: blue;
+}
+.box{
+  width: 100%;
+  height: 85vh;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+
+}
+.Vision{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid palevioletred; */
+}
+.log{
+    width: 35vh;
+    height: 50vh;
+    border: 2px solid rgb(0, 174, 255);
+    border-radius: 10%;
+    margin-left: 40vh;
+   
+}
+.tx{
+    width: 90vh;
+    height: 50vh;
+    /* border: 1px solid red; */
+    margin-top: -40vh;
+    margin-left: 80vh;
+}
+.btn{
+    width: 30vh; 
+    height: 8vh; 
+    margin-left: 30vh; 
+    margin-top: 5vh;
+    border-radius: 42%;
+    font-size: 20px;
+    background-color: rgb(0, 157, 255);
+
+}  
+.btn:hover{
+    background-color: whitesmoke;
+    transform: translatey(10px);
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue; 
+}
+.logo{
+    width: 40vh;
+    height: 55px;
+    /* border: 1px solid red; */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    width: 50vh;
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    /* padding: 10px; */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: blue;
+}
+.box{
+  width: 100%;
+  height: 85vh;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+
+}
+.Vision{
+    width: 100%;
+    height: 120vh;
+    /* border: 1px solid palevioletred; */
+}
+.log{
+    width: 35vh;
+    height: 50vh;
+    border: 2px solid rgb(0, 174, 255);
+    border-radius: 10%;
+    margin-left: 40vh;
+   
+}
+.tx{
+    width: 90vh;
+    height: 50vh;
+    /* border: 1px solid red; */
+    margin-top: -40vh;
+    margin-left: 80vh;
+}
+.btn{
+    width: 30vh; 
+    height: 8vh; 
+    margin-left: 30vh; 
+    margin-top: 5vh;
+    border-radius: 10vh;
+    font-size: 20px;
+    background-color: rgb(0, 157, 255);
+
+}  
+.btn:hover{
+    background-color: whitesmoke;
+    transform: translatey(10px);
+}
+.stx{
+    color: whitesmoke; 
+    font-size: 32px; 
+    font-family: Arial, sans-serif; 
+    width: 100%;
+    height:15vh; 
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.threebox{
+    width: 55%;
+    height: 45vh;
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 37vh;
+}
+.table1 {
+  width: 33vh;
+  height: 39vh;
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 3vh;
+  box-shadow: 2px 2px  rgb(0, 162, 255);
+}
+.table2 {
+  width: 33vh;
+  height: 39vh;
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 3vh;
+  box-shadow: 2px 2px  rgb(0, 162, 255);
+}
+.table3 {
+  width: 33vh;
+  height: 40vh;
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 3vh;
+  box-shadow: 2px 2px  rgb(0, 162, 255);
+}
+.Ourapproch{
+    width: 70%;
+    height: 70vh;
+    /* border: 1px solid red; */
+    margin-left: 30vh;
+
+
+}
+.tt{
+    width:70vh;
+    /* font-size: 25px;  */
+    height: 70vh;
+    /* border: 1px solid pink; */
+    color: whitesmoke;
+    margin-left: 10vh;
+   
+}
+.bt{
+    width: 45vh;
+    height: 5vh;
+    background-color: rgb(0, 170, 255);
+    font-size: 20px;
+    color: whitesmoke;
+    border-radius: 10vh;
+    margin-top: 5vh;
+    margin-left: 10vh;
+}
+.bt :hover{
+    background-color: whitesmoke;
+    transform: translatey(10px);
+    color: black;
+}
+.appr{
+    width: 30vh;
+    height: 45vh;
+    border: 1px solid rgb(0, 191, 255);
+    margin-left: 90vh;
+    margin-top: -67vh;
+    border-radius: 5vh;
+
+    
+}
+.apr{
+    width: 20vh;
+    height: 25vh;
+    border: 1px solid black;
+    justify-content: center;
+    margin-left: 5vh;
+    margin-top: 2vh;
+    background-image: url(light.png);
+    background-size: 100% 100%;
+  
+}
+.ser{
+    width: 70%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    margin-left: 30vh;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxes{
+    width: 30vh;
+    height: 45vh;
+    border: 1px solid rgb(0, 153, 255);
+    box-shadow: 2px 2px rgb(0, 162, 255);
+    border-radius: 3vh;
+}
+.inner-box{
+    width: 10vh;
+    height: 11vh;
+    border: 1px solid rebeccapurple;
+    
+    margin-left: 10vh;
+}
+.last{
+    width: 100%;
+    height: 200vh;
+    border: 1px solid red;
+}
+.bb{
+    width: 80%;
+    height: 15vh;
+    /* border: 1px solid rgb(85, 153, 51); */
+    margin-left: 20vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bs{
+    width: 10vh;
+    height: 10vh;
+    /* border: 1px solid pink; */
+}
+.chini{
+    width: 70%;
+    height: 50vh;
+    /* border: 1px solid pink;  */
+    margin-top: 15vh;
+    margin-left: 30vh;
+    background-image: url(chini.png);
+    background-size: 100% 100%;
+}
+
+
+  </style>
+  <div class="main" style="background-color: rgb(17, 2, 27);">
+    <nav>
+        <div class="logo">
+            <img src="logo-01.svg" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown"><a href="#">Services<i class="fa-solid fa-caret-down fa-beat-fade"></i></a>
+            <div class="dropdown-content">
+              <a href="https://www.infinitedigital.io/public-relations/" class="elementor-sub-item" >Public Relations</a> 
+              <a href="https://www.infinitedigital.io/community-buildng/" class="elementor-sub-item">Community Buildng</a>
+              <a href="https://www.infinitedigital.io/user-acquisition-and-growth/" class="elementor-sub-item">User Acquisition &amp; Growth</a>
+              <a href="https://www.infinitedigital.io/influencer-marketing/" class="elementor-sub-item">Influencer Marketing</a>
+              <a href="https://www.infinitedigital.io/content-marketing/" class="elementor-sub-item">Content Marketing</a>
+              <a href="https://www.infinitedigital.io/event-management/" class="elementor-sub-item">Event Management</a>
+            </div>
+        </li>
+            <li><a href="http://127.0.0.1:5500/Vision.html">Our Vision</a></li>
+            <li><a href="http://127.0.0.1:5500/ourapproch.html#">Our Approach</a></li>
+
+        </ul>
+    </nav>
+   
+  <div class="box">
+    <div><h1 class="text" style="width: 70vh; height: 40vh;color: whitesmoke;font-size: 43px; margin-left: 10vh;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        The Web3 Marketing<br> Powerhouse Fueling <br>Transformational Growth</h1></div>
+        <!-- <button style="width: 20vh; height: 10vh;">Let's Talk</button> -->
+    <div class="video-container" style="border:1px solid black ; width: 104vh;margin-left: 85vh; margin-top:-40vh ;">
+      <video autoplay muted loop controls="false">
+          <source src="1video.mp4" type="video/mp4">
+      </video>
+      
+  </div>
+  </div>
+  <!-- Our Vision page -->
+
+ 
+
+ <div class="Vision">
+    <div class="log">
+        <div class="l" style="width: 20vh; height: 25vh;background-image: url(vision.png); background-size: 100% 100%; margin-left: 7vh; margin-top: 5vh;"></div>
+    <h1 style="color: whitesmoke;text-align: center; margin-top: 2vh; ">Our <br>Vision</h1>
+    </div> 
+    <div class="tx" >
+        <div style="color: whitesmoke; font-size: 22px;font-family: Arial, sans-serif;">Empowering Purposeful Innovation: Shaping the Future of Blockchain with Integrity</div>
+    <p style="color: whitesmoke;font-family: Arial, sans-serif; margin-top: 3vh;">We selectively work with ambitious startups who share our values for the future of blockchain. 
+    We are dedicated to partnering with purposeful companies that are committed to making a lasting impact and advancing the blockchain space in meaningful ways.</p>
+    <button class="btn">Learn More</button>
+    
+    </div> 
+    <div class="stx">What makes us different from others?
+        <div style="font-size: 13px;">We don’t cut corners for short wins without sustainable growth. To achieve this, we follow three essential steps:</div>
+    </div>
+    <div class="threebox">
+        <div class="table1">
+            <div style="width: 10vh; height: 10vh; border: 1px solid black; margin-left: 12vh; margin-top: 2vh; background-image: url(1st..jpg); background-size: 100% 100%;"></div>
+           <strong style="color: whitesmoke; font-size: 20px; margin-left: 9vh;margin-top: 3vh;">Auditing &<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;Review</strong>
+        <p style="color: whitesmoke; font-size: 14px;text-align: center;margin-top: 2vh; ">We start off by completing a comprehensive review of your website, social media channels, your current go-to-market strategies and conduct analysis</p>
+          </div>
+          <div class="table2">
+            <div style="width: 10vh; height: 10vh; border: 1px solid black; margin-left: 12vh; margin-top: 2vh;background-image: url(2nd.jpg); background-size: 100% 100%; z-index: 10;"></div>
+            <strong style="color: whitesmoke; font-size: 20px; margin-left: 14vh;margin-top: 3vh;">Our<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Planning</strong>
+            <p style="color: whitesmoke; font-size: 14px;text-align: center;margin-top: 2vh; ">After the comprehensive review and audit are completed, we will develop a quarterly plan with the best strategies possible moving forward.</p>
+
+           
+          </div>
+          <div class="table3">
+            <div style="width: 10vh; height: 10vh; border: 1px solid black; margin-left: 12vh; margin-top: 2vh; background-image: url(4.png); background-size: 100% 100%;"></div>
+            <strong style="color: whitesmoke; font-size: 20px; margin-left: 12vh;margin-top: 3vh;">Strategy<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Development</strong>
+            <p style="color: whitesmoke; font-size: 14px;text-align: center;margin-top: 1vh; ">Along with setting plans, we will recommend certain best practices, tools, and procedures that could be adopted to ensure the our execution would return the best results.</p>
+
+          </div>
+    </div>
+</div>
+<!-- Our Approach -->
+<div class="Ourapproch">
+    <div class="tt"><b>We pride ourselves on offering the best go-to-market strategies possible</b>
+    <div style="color: whitesmoke; margin-top: 3vh; text-align: justify;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; We’re always on top of market trends and use our expertise to design well-structured processes that we execute with creativity to meet all your marketing needs.
+         We’re especially passionate about community building, from raising awareness to user acquisition and user retention.<br>
+        &nbsp; &nbsp;          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+  We work closely with you to deliver your vision and develop strategies that align with your goals, ensuring your project stands out in the competitive market.<br>
+  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  Looking for a Crypto Marketing Agency for your project?</div>
+   
+ <button class="bt"><a href="https://www.infinitedigital.io/schedule-a-meeting/" style="text-decoration: none;transform: translatey(10px); color: black;">Schedule a call with us today!</a></button>
+</div>
+<div class="appr">
+    <div class="apr"> <div style="color:  whitesmoke; font-size: 33px;margin-top: 27vh;text-align: center;">Our Approach</div></div>
+</div>
+
+  </div>
+
+
+<!-- service page -->
+  <div class="ser"> 
+    <div class="boxes">
+        <div class="inner-box" style="background-image: url(5ser.png); background-size: 100% 100%;"></div>
+            <div class="bigt" style="color: whitesmoke; margin-top: 2vh; font-size: 25px;text-align: center;">Public <br>Relations</div>
+        <div style="color: whitesmoke; font-size: 12px; margin-top: 2vh;text-align: center;">We work hand-in-hand with reputable journalists and media outlets to ensure that accurate, well-researched information reaches the public. We consistently places our partners in the top trade publications and leading industry podcasts.</div>
+    </div>
+    <div class="boxes">
+        <div class="inner-box"style="background-image: url(8ser.png); background-size: 100% 100%;"></div>
+<div class="bigt" style="color: whitesmoke; margin-top: 2vh; font-size: 25px;text-align: center;">Community Building</div>
+<div style="color: whitesmoke; font-size: 12px; margin-top: 2vh;text-align: center;">Community is the most important part of a building in web3. They are your greatest asset in acquiring users, token holders, and developers. Our team specializes in building large and active communities of all types.</div>
+    </div>
+    <div class="boxes">
+        <div class="inner-box"style="background-image: url(3ser.png); background-size: 100% 100%;"></div>
+        <div class="bigt" style="color: whitesmoke; margin-top: 1vh; font-size: 25px;text-align: center;">Influencer Marketing</div>
+        <div style="color: whitesmoke; font-size: 12px; margin-top: 1vh;text-align: center;">We work with key opinion leaders across all major crypto platforms, including Twitter, YouTube, Telegram, and Discord. Our influencer marketing campaigns can help you reach new audiences and maximize the reach of news and announcements.</div>
+    </div>
+    <div class="boxes">
+        <div class="inner-box" style="background-image: url(3ser.png); background-size: 100% 100%;"></div>
+        <div class="bigt" style="color: whitesmoke; margin-top: 2vh; font-size: 25px;text-align: center;">Community Management</div>
+        <div style="color: whitesmoke; font-size: 12px; margin-top: 2vh;text-align: center;">Actively foster community involvement by responding to inquiries and tickets on Discord, addressing issues, and organizing events to create a more inclusive community.</div>
+    </div>
+    <div class="boxes">
+        <div class="inner-box" style="background-image: url(3ser.png); background-size: 100% 100%;"></div>
+        <div class="bigt" style="color: whitesmoke; margin-top: 2vh; font-size: 25px;text-align: center;">Content Marketing</div>
+        <div style="color: whitesmoke; font-size: 12px; margin-top: 2vh;text-align: center;">Build and manage your social media profiles and presence, including Twitter, Discord, Telegram, Instagram, LinkedIn, and additional channels that may be deemed relevant.</div>
+    </div>
+    <div class="boxes">
+        <div class="inner-box" style="background-image: url(8ser.png); background-size: 100% 100%;"></div>
+        <div class="bigt" style="color: whitesmoke; margin-top: 2vh; font-size: 25px;text-align: center;">Partnership</div>
+        <div style="color: whitesmoke; font-size: 12px; margin-top: 2vh;text-align: center;">Utilize our proven, repeatable processes to initiate collaboration with targeted projects and parties, with the aim of driving user acquisition. Our success will be measured using key performance indicators (KPIs).
+
+        </div>
+    </div>
+    <div class="boxes">
+        <div class="inner-box" style="background-image: url(3ser.png); background-size: 100% 100%;"></div>
+        <div class="bigt" style="color: whitesmoke; margin-top: 2vh; font-size: 25px; text-align: center;">Acquisition & Growth</div>
+        <div style="color: whitesmoke; font-size: 12px; margin-top: 2vh;text-align: center;">We develop and execute customized user acquisition plans that convert your community to users and keep them engaged and coming back for more, which typically involve an omnichannel strategy to maximize our reach and impact.​</div>
+    </div>
+    <div class="boxes">
+        <div class="inner-box" style="background-image: url(5ser.png); background-size: 100% 100%;"></div>
+        <div class="bigt" style="color: whitesmoke; margin-top: 2vh; font-size: 25px;  text-align: center;">Event <br>Management</div>
+        <div style="color: whitesmoke; font-size: 12px; margin-top: 2vh;text-align: center;">We offer comprehensive solutions for organizing, promoting, and executing crypto-focused events, ensuring seamless coordination, engaging experiences, and impactful networking opportunities for attendees.</div>
+    </div>
+</div>
+<div class="last">
+<div style="text-align: center; color: whitesmoke;font-size: 30px;">Companies We’ve Worked With</div>
+<div class="bb">
+   <div class="bs" style="background-image: url(Animal-Concerts.png); background-size: 100% 100%;"></div>
+   <div class="bs" style="background-image: url(NFTULoan_w.png); background-size: 100% 100%; width: 15vh;"></div>
+   <div class="bs" style="background-image: url(Legend-of-Venari.png); background-size: 100% 100%;"></div>
+   <div class="bs" style="background-image: url(Magic-Eden.png); background-size: 100% 100%;"></div>
+   <div class="bs" style="background-image: url(Fusionist_Logo_07_Color.png); background-size: 100% 100%;"></div>
+   <div class="bs" style="background-image: url(Axie-Infinity.png); background-size: 100% 100%;"></div>
+   <div class="bs" style="background-image: url(Timeshuffle.png); background-size: 100% 100%;"></div>
+   <div class="bs" style="background-image: url(MunchiesNFT.png); background-size: 100% 100%;"></div>
+   
+</div>
+<button class="bt" style="margin-left: 85vh;"><a href="https://www.infinitedigital.io/schedule-a-meeting/" style="text-decoration: none;transform: translatey(10px); color: black;">Learn More</a></button>
+    <div class="chini"></div>
+    <div style="color: whitesmoke; font-size: 35px; text-align: center; margin-top: 10vh;"><b>FAQs<b></div>
+        
+        
+        <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 60%;margin-left:35vh;">
+  <div class="accordion-item" >
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        What makes Infinite Digital different from other digital marketing agencies?
+
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">At Infinite Digital, we stand out from other digital marketing agencies by delivering exceptional results with a personal touch. Our approach revolves around creating customized go-to-market strategies and executing them to perfection, surpassing our clients’ expectations. We pride ourselves on conducting in-depth market research and understanding to craft strategies tailored to your unique needs. Unlike agencies that juggle a multitude of projects, we believe in quality over quantity. We deliberately limit ourselves to a maximum of 4 projects under one team unit, allowing us to provide the dedicated attention our clients truly deserve. 
+        It’s our commitment to fostering meaningful partnerships and delivering outstanding outcomes.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        What digital marketing services does Infinite Digital provide?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">We offer a comprehensive suite of digital marketing services. Our services include community building, content management, influencer marketing, community management, user acquisition and user retention.
+         Our expertise and strategies are designed to effectively promote and enhance the visibility of your venture.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        What is the typical timeline for implementing Web3 Marketing strategies for projects?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">The timeline for implementing marketing strategies varies based on the project and its unique needs. Typically, we allocate a minimum of 3 months for our initial contract, which includes conducting comprehensive research, establishing a strong foundation, creating customized strategies, and initiating campaign execution and iteration.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        How do you stay up-to-date with the latest trends in the blockchain industry?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">We actively participate in conferences and events on a regular basis, ensuring that we stay up-to-date with the latest trends and innovations. Our founder, Adrian Au, is widely recognized as a thought leader in the blockchain industry. With his extensive marketing expertise, Adrian not only shares invaluable insights but also inspires and empowers others to navigate the ever-evolving landscape of blockchain technology.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        How do I get started with your agency? What is the onboarding process like?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">To get started with our agency, simply reach out to us through the website contact button. Our onboarding process begins with an initial consultation where we discuss your goals and requirements. From there, we tailor a customized plan that aligns with your needs. We handle the necessary paperwork, conduct thorough research, and collaborate closely with you to ensure a smooth onboarding experience.</div>
+    </div>
+  </div>
+ 
+  <div style="font-size: 25px; text-align: center; color: whitesmoke; margin-top: 15vh;">Ready to launch and scale your project?</div>
+ 
+  <button class="bt" style="margin-left: 35vh; margin-top: 10vh;"><a href="https://www.infinitedigital.io/schedule-a-meeting/" style="text-decoration: none;transform: translatey(10px); color: black;">Get Started Now</a></button>
+
+</div>
+</body>
+</html>
